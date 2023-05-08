@@ -16,13 +16,13 @@ A tool for listing and rolling back snapper btrfs snapshots.
 List snapshots in `/.snapshots`:
 
 ```
-snapback ls
+sudo snapback ls
 ```
 
 Rollback to snapshot:
 
 ```
-snapback num 123 
+sudo snapback num 123
 ```
 
 Where `123` is the number of brtfs snapshot.

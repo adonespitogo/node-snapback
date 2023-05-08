@@ -3,7 +3,7 @@ const cp = require("node:child_process");
 
 module.exports = async (num) => {
   return new Promise((resolve, reject) => {
-    const proc = cp.spawn("sudo", ["snapper-rollback", num]);
+    const proc = cp.spawn("snapper-rollback", [num]);
     proc.stdin.setDefaultEncoding("utf8");
 
     process.stdin.on("data", (data) => {
