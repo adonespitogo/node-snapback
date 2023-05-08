@@ -1,0 +1,30 @@
+{
+  "name": "@adonesp/snapper-rollback",
+  "version": "1.0.0",
+  "description": "A snapper-rollback tool for listing and rolling back snapper btrfs snapshots.",
+  "main": "index.js",
+  "bin": {
+    "snapper-rb": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adonespitogo/node-snapper-rollback.git"
+  },
+  "keywords": [
+    "snapper",
+    "snapper-rollback",
+    "btrfs"
+  ],
+  "author": "Adones Pitogo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adonespitogo/node-snapper-rollback/issues"
+  },
+  "homepage": "https://github.com/adonespitogo/node-snapper-rollback#readme",
+  "dependencies": {
+    "xml2js": "^0.5.0"
+  }
+}
