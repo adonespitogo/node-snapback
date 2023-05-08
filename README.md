@@ -21,17 +21,16 @@ snapperjs ls
 Rollback to snapshot:
 
 ```
-snapperjs rollback 123 # where '123' is the number of brtfs snapshot
+snapperjs rollback 123 
 ```
+
+Where `123` is the number of brtfs snapshot.
 
 ## Commands
-```
 
-The commands are:
-        ls                       to list available snapshots in '/.snapshots' directory.
-        rollback [snapshot number]    specify a snapshot number to rollback. For example: snapper-rb num 123
+- `ls`                          - to list available snapshots in '/.snapshots' directory.
+- `rollback [snapshot number]`    - specify a snapshot number to rollback. For example: `snapperjs rollback 123`
 
-```
 
 ## License
 [MIT License]('./LICENSE')
