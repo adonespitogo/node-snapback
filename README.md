@@ -8,7 +8,7 @@ A snapper-rollback tool for listing and rolling back snapper btrfs snapshots.
 
 ## Install
 
-`npm i -g @adonesp/snapper-rollback`
+`npm i -g @adonesp/snapperjs`
 
 ## Usage
 
