@@ -1,6 +1,6 @@
 {
   "name": "@adonesp/snapbackjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A tool for listing and rolling back snapper btrfs snapshots.",
   "main": "index.js",
   "bin": {
@@ -22,9 +22,9 @@
   "author": "Adones Pitogo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adonespitogo/node-snapperjs/issues"
+    "url": "https://github.com/adonespitogo/node-snapback/issues"
   },
-  "homepage": "https://github.com/adonespitogo/node-snapperjs#readme",
+  "homepage": "https://github.com/adonespitogo/node-snapback#readme",
   "dependencies": {
     "xml2js": "^0.5.0"
   }
