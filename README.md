@@ -1,4 +1,4 @@
-# node-snapper-rollback
+# node-snapperjs
 A snapper-rollback tool for listing and rolling back snapper btrfs snapshots.
 
 ## System Requirements:
