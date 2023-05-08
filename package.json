@@ -21,9 +21,9 @@
   "author": "Adones Pitogo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adonespitogo/node-snapper-rollback/issues"
+    "url": "https://github.com/adonespitogo/node-snapperjs/issues"
   },
-  "homepage": "https://github.com/adonespitogo/node-snapper-rollback#readme",
+  "homepage": "https://github.com/adonespitogo/node-snapperjs#readme",
   "dependencies": {
     "xml2js": "^0.5.0"
   }
