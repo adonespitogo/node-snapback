@@ -15,11 +15,11 @@ module.exports = async () => {
     const obj = JSON.parse(JSON.stringify(info));
     const snap = obj.snapshot;
     snaps.push({
-      type: snap.type[0],
-      num: parseInt(snap.num[0]),
-      date: new Date(snap.date[0]),
-      description: snap.description[0],
-      cleanup: snap.cleanup[0],
+      type: snap.type && snap.type[0],
+      num: snap.num && parseInt(snap.num[0]),
+      date: snap.date && new Date(snap.date[0]),
+      description: snap.description && snap.description[0],
+      cleanup: snap.cleanup && snap.cleanup[0],
     });
   }
 

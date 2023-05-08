@@ -1,6 +1,6 @@
 {
   "name": "@adonesp/snapbackjs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A tool for listing and rolling back snapper btrfs snapshots.",
   "main": "index.js",
   "bin": {
