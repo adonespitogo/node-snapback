@@ -23,6 +23,7 @@ module.exports = async () => {
     });
   }
 
+  console.log(`--------|-------|---------------`);
   console.log(`num\t|type\t|description`);
   console.log(`--------|-------|---------------`);
   for (const snap of snaps) {
