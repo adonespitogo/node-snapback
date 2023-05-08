@@ -14,7 +14,7 @@ module.exports = async (num) => {
     });
 
     proc.stdout.on("data", (out) => {
-      console.log(String(out));
+      process.stdout.write(out);
     });
 
     proc.stderr.on("data", (err) => {
