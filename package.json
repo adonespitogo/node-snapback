@@ -15,6 +15,7 @@
   },
   "keywords": [
     "snapper",
+    "snapperjs",
     "snapper-rollback",
     "btrfs"
   ],
