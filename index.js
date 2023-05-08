@@ -3,6 +3,7 @@
 const ls = require("./actions/ls");
 const rollback = require("./actions/rollback");
 const help = require("./actions/help");
+const version = require("./actions/version");
 
 async function snapperRb() {
   const args = process.argv;
@@ -25,6 +26,13 @@ async function snapperRb() {
       await rollback(num).catch((err) => {
         console.log("Error in rollback: ", err);
       });
+      break;
+
+    case "v":
+    case "-v":
+    case "version":
+    case "--version":
+      version();
       break;
 
     default:

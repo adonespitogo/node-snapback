@@ -29,8 +29,9 @@ Where `123` is the number of brtfs snapshot.
 
 ## Commands
 
-- `ls`                       - to list available snapshots in '/.snapshots' directory.
-- `num [snapshot number]`    - specify a snapshot number to rollback. For example: `snapback num 123`
+- `ls`                      - to list available snapshots in '/.snapshots' directory.
+- `num [snapshot number]`   - specify a snapshot number to rollback. For example: `snapback num 123`
+- `v, -v, version, --version`           - print the tool version
 
 
 ## License
