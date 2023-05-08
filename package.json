@@ -1,10 +1,10 @@
 {
   "name": "@adonesp/snapper-rollback",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A snapper-rollback tool for listing and rolling back snapper btrfs snapshots.",
   "main": "index.js",
   "bin": {
-    "snapper-rb": "index.js"
+    "snapperjs": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

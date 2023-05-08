@@ -3,7 +3,9 @@ A snapper-rollback tool for listing and rolling back snapper btrfs snapshots.
 
 ## System Requirements:
 
-- `snapper-rollback`
+First
+
+- [snapper](https://wiki.archlinux.org/title/snapper)
 - `sudo`
 
 

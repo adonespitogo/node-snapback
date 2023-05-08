@@ -17,7 +17,7 @@ async function snapperRb() {
       await ls();
       break;
 
-    case "num":
+    case "rollback":
       if (args.length < 4) {
         return help();
       }
