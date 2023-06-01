@@ -23,9 +23,14 @@ module.exports = async () => {
     });
   }
 
+  snaps.sort(function (a, b) {
+    return a.num - b.num;
+  });
+
   console.log(`--------|-------|---------------`);
   console.log(`num\t|type\t|description`);
   console.log(`--------|-------|---------------`);
+
   for (const snap of snaps) {
     console.log(`${snap.num}\t|${snap.type}\t|${snap.description}`);
   }
