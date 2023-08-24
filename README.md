@@ -34,7 +34,7 @@ Rollback to a snapshot:
 sudo snapback num 123
 ```
 
-Where `123` is the number of brtfs snapshot created by the pacman hook.
+Where `123` is the number of brtfs snapshot created by the pacman hook. This will also restore the corresponding EFI files in `/boot` directory.
 
 ## Commands
 
