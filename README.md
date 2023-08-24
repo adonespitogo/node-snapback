@@ -2,7 +2,7 @@
 A tool for listing and rolling back snapper btrfs snapshots, including `/boot` EFI directory.
 
 ## System Requirements:
-
+- NodeJs
 - [snapper](https://wiki.archlinux.org/title/snapper)
 - [snapper-rollback](https://aur.archlinux.org/packages/snapper-rollback)
 - a user with `sudo` access
