@@ -19,7 +19,7 @@ Install pacman hook scripts:
 sudo snapback install
 ```
 
-It will install the pacman hooks which will automatically backup your `/boot` directory everytime you install a new kernel.
+It will install the pacman hooks which will automatically backup your `/boot` directory and create a btrfs snapshot everytime you install/update your kernel.
 Each snapshot created by the pacman hook will have a description `Linux backup for [kernel version] => [backup directory]`.
 
 List the snapshots in `/.snapshots`:
