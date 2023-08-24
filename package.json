@@ -1,7 +1,7 @@
 {
   "name": "@adonesp/snapbackjs",
   "version": "1.1.0",
-  "description": "A tool for listing and rolling back snapper btrfs snapshots.",
+  "description": "A tool for listing and rolling back snapper btrfs snapshots including the EFI directory",
   "main": "index.js",
   "bin": {
     "snapback": "index.js"
