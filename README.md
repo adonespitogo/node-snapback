@@ -13,25 +13,35 @@ A tool for listing and rolling back snapper btrfs snapshots.
 
 ## Usage
 
-List snapshots in `/.snapshots`:
+Install pacman hook scripts:
+
+```
+sudo snapback install
+```
+
+It will install the pacman hooks which will automatically backup your `/boot` directory everytime you install a new kernel.
+Each snapshot created by the pacman hook will have a description `Linux backup for [kernel version] => [backup directory]`.
+
+List the snapshots in `/.snapshots`:
 
 ```
 sudo snapback ls
 ```
 
-Rollback to snapshot:
+Rollback to a snapshot:
 
 ```
 sudo snapback num 123
 ```
 
-Where `123` is the number of brtfs snapshot.
+Where `123` is the number of brtfs snapshot created by the pacman hook.
 
 ## Commands
 
-- `ls`                      - to list available snapshots in '/.snapshots' directory.
-- `num [snapshot number]`   - specify a snapshot number to rollback. For example: `snapback num 123`
-- `v, -v, version, --version`           - print the tool version
+- `install`                     - to install the pacman hook scripts.
+- `ls, list`                          - to list available snapshots in '/.snapshots' directory.
+- `num [snapshot number]`       - specify a snapshot number to rollback. For example: `snapback num 123`
+- `v, -v, version, --version`   - print the tool version
 
 
 ## License

@@ -3,7 +3,7 @@ const path = require("node:path");
 const fs = require("node:fs/promises");
 const { SNAPSHOTS_DIR } = require("../config.js");
 
-module.exports = async () => {
+exports.list = async () => {
   const parser = new xml2js.Parser({});
   const nums = await fs.readdir(SNAPSHOTS_DIR);
   const snaps = [];
@@ -26,6 +26,12 @@ module.exports = async () => {
   snaps.sort(function (a, b) {
     return a.num - b.num;
   });
+
+  return snaps;
+};
+
+exports.print = async () => {
+  const snaps = await exports.list();
 
   console.log(`--------|-------|---------------`);
   console.log(`num\t|type\t|description`);

@@ -1,8 +1,9 @@
 #! /usr/bin/env node
 
-const ls = require("./actions/ls");
-const rollback = require("./actions/rollback");
-const help = require("./actions/help");
+const { install } = require("./actions/install");
+const { print } = require("./actions/ls");
+const { rollback } = require("./actions/rollback");
+const { help } = require("./actions/help");
 const version = require("./actions/version");
 
 async function snapperRb() {
@@ -14,8 +15,12 @@ async function snapperRb() {
   const cmd = args[2];
 
   switch (cmd) {
+    case "install":
+      await install();
+      break;
     case "ls":
-      await ls();
+    case "list":
+      await print();
       break;
 
     case "num":
