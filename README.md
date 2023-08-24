@@ -1,5 +1,5 @@
 # node-snapback
-A tool for listing and rolling back snapper btrfs snapshots.
+A tool for listing and rolling back snapper btrfs snapshots, including `/boot` EFI directory.
 
 ## System Requirements:
 
