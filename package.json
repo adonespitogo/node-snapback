@@ -26,6 +26,10 @@
   },
   "homepage": "https://github.com/adonespitogo/node-snapback#readme",
   "dependencies": {
+    "fs-extra": "^11.1.1",
     "xml2js": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1"
   }
 }

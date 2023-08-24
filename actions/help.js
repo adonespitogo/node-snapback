@@ -1,6 +1,6 @@
 const { name, description, version } = require("../package.json");
 
-module.exports = () => {
+exports.help = () => {
   const help = `${name} version ${version}
 ${description}
 
