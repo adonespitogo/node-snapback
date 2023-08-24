@@ -19,6 +19,7 @@ async function snapperRb() {
       await install();
       break;
     case "ls":
+    case "list":
       await print();
       break;
 

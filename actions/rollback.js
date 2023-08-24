@@ -33,7 +33,7 @@ exports.rollback = async (num) => {
   });
 
   const snaps = await list();
-  const snap = snaps.find((snap) => snap.num === num);
+  const snap = snaps.find((snap) => parseInt(snap.num) === parseInt(num));
   if (!snap) {
     console.warn("Unable to find snapshot: ", num);
     return;
@@ -49,7 +49,11 @@ exports.rollback = async (num) => {
     const backupDir = match[2];
     const exists = await fs.exists(backupDir);
     if (exists) {
+      console.log("Removing contents of /boot...");
+      await fs.emptyDir("/boot");
       await fs.copy(backupDir, "/boot");
+      console.log("Copied contents of " + backupDir + " to /boot.");
+      console.log("\nReboot to finish.")
     } else {
       console.warn("Unable to find backup directory: ", backupDir);
     }
