@@ -50,7 +50,6 @@ exports.rollback = async (num) => {
     const exists = await fs.exists(backupDir);
     if (exists) {
       console.log("Removing contents of /boot...");
-      await fs.emptyDir("/boot");
       await fs.copy(backupDir, "/boot");
       console.log("Copied contents of " + backupDir + " to /boot.");
       console.log("\nReboot to finish.")
