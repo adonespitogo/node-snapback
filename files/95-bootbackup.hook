@@ -1,10 +1,15 @@
 # /etc/pacman.d/hooks/95-bootbackup.hook
 
 [Trigger]
+Type = File
 Operation = Upgrade
 Operation = Install
 Operation = Remove
 Type = Path
+Target = systemd
+Target = boot/vmlinuz-linux
+Target = boot/vmlinuz-linux-lts
+Target = usr/lib/initcpio/*
 Target = usr/lib/modules/*/vmlinuz
 
 [Action]
